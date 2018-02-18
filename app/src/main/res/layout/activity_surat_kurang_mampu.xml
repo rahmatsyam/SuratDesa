@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.suratdesa.SuratKurangMampu">
+
+    <ScrollView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_submit3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Nama" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="NIK" />
+
+            <EditText
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Tempat" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="datetime"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Tanggal Lahir" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jenis Kelamin"
+                android:background="@android:drawable/editbox_background_normal"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pekerjaan"
+                android:background="@android:drawable/editbox_background_normal"/>
+
+
+
+            <EditText
+                android:background="@android:drawable/editbox_background_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat" />
+
+            <EditText
+                android:background="@android:drawable/editbox_background_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Ayah" />
+            <EditText
+                android:background="@android:drawable/editbox_background_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pekerjaan Ayah" />
+
+            <EditText
+                android:background="@android:drawable/editbox_background_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Ibu" />
+            <EditText
+                android:background="@android:drawable/editbox_background_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pekerjaan Ibu" />
+
+            <EditText
+                android:background="@android:drawable/editbox_background_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat Orang Tua" />
+            <EditText
+                android:background="@android:drawable/editbox_background_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah Tanggungan" />
+
+
+
+
+
+            <TextView
+                android:background="@android:drawable/editbox_background_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload KTP" />
+
+            <TextView
+                android:background="@android:drawable/editbox_background_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Kartu Keluarga" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#00bcd4"
+        android:text="Submit"
+        android:id="@+id/btn_submit3"
+        android:textColor="#fff"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

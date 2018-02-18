@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.suratdesa.SuratKelakuanBaik">
+
+    <ScrollView
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/btn_submit2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="Nama" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="NIK" />
+
+        <EditText
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="Tempat" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="datetime"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="Tanggal Lahir" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jenis Kelamin"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pekerjaan"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Agama"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+
+        <EditText
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat" />
+
+
+
+        <TextView
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload KTP" />
+
+        <TextView
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Kartu Keluarga" />
+
+        <TextView
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Akte Kelahiran" />
+
+        <TextView
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload foto 4x6(warna)" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#00bcd4"
+        android:text="Submit"
+        android:id="@+id/btn_submit2"
+        android:textColor="#fff"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

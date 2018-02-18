@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgn_frame">
+    <Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/txt_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loren Ipsum bla blala wlel;ldlsl;sdsdl;ls ndsjndsjdskd" />
+
+      
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:textColor="@color/colorWhity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="OK" />
+    </LinearLayout>
+
+
+</LinearLayout>

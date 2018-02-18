@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.suratdesa.SuratNikah">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_submit5"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Nama" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="NIK"
+                android:inputType="number" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:hint="Tempat"
+                    android:inputType="text" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:hint="Tanggal Lahir"
+                    android:inputType="datetime" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Jenis Kelamin" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Pekerjaan" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Alamat" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:text="Upload KTP" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:text="Upload Kartu Keluarga" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:text="Upload Surat Pernyataan Belum Menikah" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:text="Upload Akte Kelahiran" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:text="Upload PBB" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00bcd4"
+        android:padding="5dp"
+        android:text="Submit"
+        android:textColor="#fff" />
+</RelativeLayout>
