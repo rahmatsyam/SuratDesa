@@ -21,8 +21,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:drawable/editbox_background_normal"
-                android:hint="Nama" />
+                android:hint="Nama Kepala Rumah Tangga" />
 
+
+            <EditText
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Nama Anggota Keluarga" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,17 +88,40 @@
                 android:layout_height="wrap_content"
                 android:hint="Kewarganegaraan" />
 
-            <TextView
-                android:background="@android:drawable/editbox_background_normal"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Upload KTP" />
+                android:orientation="horizontal">
 
-            <TextView
-                android:background="@android:drawable/editbox_background_normal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Upload Kartu Keluarga" />
+                <TextView
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload KTP" />
+                <Button
+                    android:text="Pilih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:background="@android:drawable/editbox_background_normal"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Upload Kartu Keluarga" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Pilih"/>
+
+           </LinearLayout>
+
+
 
 
         </LinearLayout>

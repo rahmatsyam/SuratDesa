@@ -13,11 +13,10 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="MyToolbar">
-        <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
-        <item name="android:background">@color/colorWhity</item>
-        <item name="android:titleMarginTop" tools:ignore="NewApi">?actionBarSize</item>
-        <item name="android:elevation" tools:ignore="NewApi">4dp</item>
+    <style name="Divider.Horizontal" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Divider.Width</item>
+        <item name="android:background">@color/Divider</item>
     </style>
 
 

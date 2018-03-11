@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -18,8 +19,10 @@ import android.widget.TextView;
 
 import com.example.android.suratdesa.adapter.CustomAdapter;
 import com.example.android.suratdesa.adapter.Item;
+import com.example.android.suratdesa.config.SessionManager;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class MenuUtama extends AppCompatActivity {
@@ -29,6 +32,8 @@ public class MenuUtama extends AppCompatActivity {
     android.support.v7.widget.Toolbar mytoolbar;
     TextView text_info;
 
+    String nama;
+    SessionManager session;
 
     LayoutInflater inflater;
     AlertDialog.Builder Builder;
@@ -44,6 +49,18 @@ public class MenuUtama extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_utama);
+
+        session = new SessionManager(getApplicationContext());
+
+
+        HashMap<String, String> User = session.getUserDetails();
+        nama = User.get(SessionManager.KEY_NAMA);
+
+        TextView nama_user = findViewById(R.id.nama_user);
+        nama_user.setText(nama);
+        Log.i("jeje","lala" + nama);
+
+
 
         gridView = findViewById(R.id.grid);
 
@@ -72,7 +89,7 @@ public class MenuUtama extends AppCompatActivity {
                         showDialogSurat();
                         break;
                     case 2:
-                        Intent riwayat = new Intent(getApplicationContext(),Riwayat.class);
+                        Intent riwayat = new Intent(getApplicationContext(), Riwayat.class);
                         startActivity(riwayat);
                         break;
                     case 3:
@@ -87,6 +104,7 @@ public class MenuUtama extends AppCompatActivity {
                 }
             }
         });
+
 
     }
 
@@ -211,6 +229,13 @@ public class MenuUtama extends AppCompatActivity {
 
     private void onClickedButton(AlertDialog alertDialog) {
         alertDialog.dismiss();
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        finish();
+
     }
 
 
